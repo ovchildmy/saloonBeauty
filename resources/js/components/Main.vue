@@ -91,31 +91,31 @@
                 </ul>
             </nav>
             <div v-if="mainBlock == 'all'" class="d-flex flex-wrap justify-content-between main__portfolio__item--all">
-                <img src="images/portfolio/work-6.png" alt="">
-                <img src="images/portfolio/work-3.png" alt="">
-                <img src="images/portfolio/work-4.png" alt="">
-                <img src="images/portfolio/work-2.png" alt="">
-                <img src="images/portfolio/work-5.png" alt="">
-                <img src="images/portfolio/work-7.png" alt="">
-                <img src="images/portfolio/work-1.png" alt="">
-                <img src="images/portfolio/work-8.png" alt="">
-                <img src="images/portfolio/work-9.png" alt="">
+                <div><img src="images/portfolio/work-6.png" alt=""></div>
+                <div><img src="images/portfolio/work-3.png" alt=""></div>
+                <div><img src="images/portfolio/work-4.png" alt=""></div>
+                <div><img src="images/portfolio/work-2.png" alt=""></div>
+                <div><img src="images/portfolio/work-5.png" alt=""></div>
+                <div><img src="images/portfolio/work-7.png" alt=""></div>
+                <div><img src="images/portfolio/work-1.png" alt=""></div>
+                <div><img src="images/portfolio/work-8.png" alt=""></div>
+                <div><img src="images/portfolio/work-9.png" alt=""></div>
             </div>
             <div v-if="mainBlock == 'hair'" class="d-flex flex-wrap justify-content-between main__portfolio__item--hair">
-                <img src="images/portfolio/work-1.png" alt="">
-                <img src="images/portfolio/work-2.png" alt="">
-                <img src="images/portfolio/work-3.png" alt="">
+                <div><img src="images/portfolio/work-1.png" alt=""></div>
+                <div><img src="images/portfolio/work-2.png" alt=""></div>
+                <div><img src="images/portfolio/work-3.png" alt=""></div>
             </div>
             <div v-if="mainBlock == 'manicure'" class="d-flex flex-wrap justify-content-between main__portfolio__item--manicure">
-                <img src="images/portfolio/work-4.png" alt="">
-                <img src="images/portfolio/work-5.png" alt="">
-                <img src="images/portfolio/work-6.png" alt="">
-                <img src="images/portfolio/work-7.png" alt="">
-                <img src="images/portfolio/work-8.png" alt="">
+                <div><img src="images/portfolio/work-4.png" alt=""></div>
+                <div><img src="images/portfolio/work-5.png" alt=""></div>
+                <div><img src="images/portfolio/work-6.png" alt=""></div>
+                <div><img src="images/portfolio/work-7.png" alt=""></div>
+                <div><img src="images/portfolio/work-8.png" alt=""></div>
             </div>
             <div v-if="mainBlock == 'pedicure'" class="d-flex flex-wrap justify-content-between main__portfolio__item--pedicure">
-                <img src="images/portfolio/work-6.png" alt="">
-                <img src="images/portfolio/work-4.png" alt="">
+                <div><img src="images/portfolio/work-6.png" alt=""></div>
+                <div><img src="images/portfolio/work-4.png" alt=""></div>
             </div>
         </div>
     </div>
