@@ -39,10 +39,10 @@ body {
     color:red;
     background: rgba(0, 0, 0, .2);
     border-bottom: 1px solid #fff;
-    transition: all, 1s;
+    transition: all, 1.3s;
 
     &.darkHeader {
-      background: rgba(0, 0, 0, .7);
+      background: rgba(0, 0, 0, .8);
     }
     & ul {
       list-style: none;

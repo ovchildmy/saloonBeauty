@@ -6,12 +6,12 @@
                 <ul class="d-flex justify-content-between align-middle">
                     <li><img :src="instIcon"></li>
                     <li><a href="/" class="item-hovered">Главная</a></li>
-                    <li><a href="/" class="item-hovered">Мастера</a></li>
-                    <li><a href="/" class="item-hovered">Косметика</a></li>
+                    <li><a href="/masters" class="item-hovered">Мастера</a></li>
+                    <li><a href="/cosmetics" class="item-hovered">Косметика</a></li>
                     <li><a href="/"><img :src="mainIcon" alt=""></a></li>
-                    <li><a href="/" class="item-hovered">Акции</a></li>
-                    <li><a href="/" class="item-hovered">Отзывы</a></li>
-                    <li><a href="/" class="item-hovered">Контакты</a></li>
+                    <li><a href="/sale" class="item-hovered">Акции</a></li>
+                    <li><a href="/reviews" class="item-hovered">Отзывы</a></li>
+                    <li><a href="/contacts" class="item-hovered">Контакты</a></li>
                     <li>Меню</li>
                 </ul>
             </div>
@@ -39,7 +39,6 @@
         },
         methods: {
             handleScroll (event) {
-                // console.log(this.$data.darkHeader);
                 this.$data.darkHeader = (window.scrollY >= 215 ? true : false); 
             }
         }
