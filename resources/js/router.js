@@ -15,6 +15,10 @@ export default new VueRouter.createRouter({
     {
       path: '/masters',
       component: () => import('./components/Masters.vue')
-    }
+    },
+    {
+      path: '/contacts',
+      component: () => import('./components/Contacts.vue')
+    },
   ]
 })
