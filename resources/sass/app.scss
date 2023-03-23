@@ -39,6 +39,11 @@ body {
     color:red;
     background: rgba(0, 0, 0, .2);
     border-bottom: 1px solid #fff;
+    transition: all, 1s;
+
+    &.darkHeader {
+      background: rgba(0, 0, 0, .7);
+    }
     & ul {
       list-style: none;
       padding: 30px;

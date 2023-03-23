@@ -1,6 +1,6 @@
 <template>
 <div id="header">
-    <div class="header ">
+    <div class="header" :class="{'darkHeader': darkHeader}">
         <div class="container">
             <div class="row">
                 <ul class="d-flex justify-content-between align-middle">
@@ -27,7 +27,20 @@
         data() {
             return {
                 instIcon: 'images/icons/icons8-instagram-96.png',
-                mainIcon: 'images/icons/omega-sign-svgrepo-com 1.png'
+                mainIcon: 'images/icons/omega-sign-svgrepo-com 1.png',
+                darkHeader: false
+            }
+        },
+        created () {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        unmounted () {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        methods: {
+            handleScroll (event) {
+                // console.log(this.$data.darkHeader);
+                this.$data.darkHeader = (window.scrollY >= 215 ? true : false); 
             }
         }
     }
