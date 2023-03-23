@@ -18,6 +18,7 @@
         </div>
     </div>
 </div>
+<MenuComponent/>
 </template>
 
 <script>
