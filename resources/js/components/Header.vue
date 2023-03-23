@@ -5,13 +5,13 @@
             <div class="row">
                 <ul class="d-flex justify-content-between align-middle">
                     <li><img :src="instIcon"></li>
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="/">Мастера</a></li>
-                    <li><a href="/">Косметика</a></li>
-                    <li><a href="/">{{ imgDir }}</a></li>
-                    <li><a href="/">Акции</a></li>
-                    <li><a href="/">Отзывы</a></li>
-                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/" class="item-hovered">Главная</a></li>
+                    <li><a href="/" class="item-hovered">Мастера</a></li>
+                    <li><a href="/" class="item-hovered">Косметика</a></li>
+                    <li><a href="/"><img :src="mainIcon" alt=""></a></li>
+                    <li><a href="/" class="item-hovered">Акции</a></li>
+                    <li><a href="/" class="item-hovered">Отзывы</a></li>
+                    <li><a href="/" class="item-hovered">Контакты</a></li>
                     <li>Меню</li>
                 </ul>
             </div>
@@ -26,7 +26,8 @@
         props: ['imgDir'],
         data() {
             return {
-                instIcon: 'images/icons/icons8-instagram-96.png'
+                instIcon: 'images/icons/icons8-instagram-96.png',
+                mainIcon: 'images/icons/omega-sign-svgrepo-com 1.png'
             }
         }
     }

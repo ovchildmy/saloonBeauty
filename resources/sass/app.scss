@@ -5,6 +5,7 @@
 // Variables
 @import 'variables';
 $gold: #CDAA7D;
+$weakGray: #cecece;
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
@@ -34,22 +35,29 @@ body {
         color: #fff;
         cursor: pointer;
         text-decoration: none;
-        transition: all, .5s;
-      }
-      a {
-        &:hover {
-          color: $gold;
-        }
       }
       li {
-        &:hover {
-          border-bottom: 1px solid $gold;
-        }
         img {
           height: 32px;
         }
       }
     }
+  }
+}
+
+.item {
+  &-active {
+    color: $gold!important;
+    border-bottom: 1px solid $gold;
+  }
+  &-hovered {
+    cursor: pointer;
+    transition: all, .5s;
+    &:hover {
+      color: $gold!important;
+      border-bottom: 1px solid $gold;
+    }
+
   }
 }
 
@@ -90,6 +98,7 @@ body {
       height: 700px;
 
       div {
+        font-size: 22px;
 
         img {
           object-fit: cover;
@@ -98,6 +107,8 @@ body {
           width: 400px;
           height: 300px;
 
+        }
+        &__image_wrapper {
           &::after {
             content: "";
             z-index: -1;
@@ -115,12 +126,73 @@ body {
     }
   }
   &__partners {
-    padding: 80px 0;
+    margin: 170px 0;
 
     .row {
       & > div {
         padding: 0 140px;
       }
     }
+  }
+  &__portfolio {
+    margin-bottom: 50px;
+    h2 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+    nav {
+      padding: 0 20%;
+      margin: 30px 0;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    img {
+      height: 420px;
+      width: 420px;
+    }
+    &__item {
+      &--all {
+        height: 1310px;
+      }
+      &--manicure {
+        height: 880px;
+      }
+    }
+  }
+}
+
+#footer {
+  color: #fff;
+  .footer {
+    padding: 40px 0;
+    border-top: 1px solid $weakGray;
+    border-bottom: 1px solid $weakGray;
+
+    div {
+      & > div {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+      &:first-child {
+        padding-top: 20px;
+      }
+      &:last-child {
+        img {
+          width: 60px;
+        }
+      }
+    }
+    
+    h3 {
+      font-weight: bold;
+    }
+  }
+  .copy {
+    margin: 15px 0;
+    color: $weakGray;
   }
 }
