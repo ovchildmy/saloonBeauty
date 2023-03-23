@@ -130,7 +130,7 @@ body {
         position: relative;
 
         &::after {
-          @include block-after-border
+          @include block-after-border;
         }
       }
         
@@ -230,6 +230,37 @@ body {
   .contacts {
     h3, img {
       margin-bottom: 30px;
+      
+#masters {
+  color: #fff;
+  
+  .masters {
+    height: 1180px;
+    margin-top: 170px;
+    &__item {
+      &__photo_wrap {
+        width: 400px;
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+          @include block-after-border;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      &__name {
+        font-size: 20px;
+      }
+      &__job {
+        font-size: 16px;
+        color: $weakGray;
+        font-weight: lighter;
+      }
     }
   }
 }
