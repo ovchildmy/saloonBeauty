@@ -53,6 +53,18 @@
         </div>
     </div>
 </div>
+<div class="main__partners">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between">
+                <img src="images/partners/1.png" alt="">
+                <img src="images/partners/2.png" alt="">
+                <img src="images/partners/3.png" alt="">
+                <img src="images/partners/4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
 <div class=""></div>
 </div>
 </template>
