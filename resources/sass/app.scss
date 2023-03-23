@@ -1,0 +1,117 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+
+// Variables
+@import 'variables';
+$gold: #CDAA7D;
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  background: #000;
+  font-family: 'EB Garamond', serif;
+}
+
+#header {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  & .header {
+    color:red;
+    background: rgba(0, 0, 0, .2);
+    border-bottom: 1px solid #fff;
+    & ul {
+      list-style: none;
+      padding: 30px;
+      margin: 0;
+      a, li {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all, .5s;
+      }
+      a {
+        &:hover {
+          color: $gold;
+        }
+      }
+      li {
+        &:hover {
+          border-bottom: 1px solid $gold;
+        }
+        img {
+          height: 32px;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  color: #fff; 
+  
+  &__introduction {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    padding-top: 290px;
+    background-size: cover;
+    background-image: url('../../public/images/bg/introduction.png');
+
+    div {
+      width: 450px;
+      font-size: 58px;
+      color: #fff;
+      margin: 0 auto;
+      font-weight: bold;
+    }
+  }
+  &__quote {
+    font-size: 25px;
+    padding: 80px 21% 20px;
+
+    div {
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+      &:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+  &__services {
+    &__list {
+      height: 700px;
+
+      div {
+
+        img {
+          object-fit: cover;
+          display: block;
+          position: relative;
+          width: 400px;
+          height: 300px;
+
+          &::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            display: block;
+            left: 15px;
+            top: -15px;
+            border: 1px solid $gold;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        
+      }
+    }
+  }
+}
