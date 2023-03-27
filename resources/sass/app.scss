@@ -267,3 +267,22 @@ body {
     }
   }
 }
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background: #000;
+  z-index: 101;
+  padding: 25px;
+  color: #fff;
+
+  img {
+    margin-bottom: 50px;
+    margin-top: 25px;
+    width: 60px;
+    cursor: pointer;
+  }
+}

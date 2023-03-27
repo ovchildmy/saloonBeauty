@@ -12,23 +12,25 @@
                     <li><a href="/sale" class="item-hovered">Акции</a></li>
                     <li><a href="/reviews" class="item-hovered">Отзывы</a></li>
                     <li><a href="/contacts" class="item-hovered">Контакты</a></li>
-                    <li>Меню</li>
+                    <li @click="showMenu">Меню</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+<MenuComponent @closeMenu="closeMenu" v-if="sideMenu"/>
 </template>
 
 <script>
     export default {
+        el: '#header',
         name: 'HeaderComponent',
-        props: ['imgDir'],
         data() {
             return {
                 instIcon: 'images/icons/icons8-instagram-96.png',
                 mainIcon: 'images/icons/omega-sign-svgrepo-com 1.png',
-                darkHeader: false
+                darkHeader: false,
+                sideMenu: false
             }
         },
         created () {
@@ -40,6 +42,12 @@
         methods: {
             handleScroll (event) {
                 this.$data.darkHeader = (window.scrollY >= 215 ? true : false); 
+            },
+            closeMenu: function () {
+                this.sideMenu = false;
+            },
+            showMenu: function () {
+                this.sideMenu = true;
             }
         }
     }
