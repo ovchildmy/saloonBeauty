@@ -3,7 +3,7 @@
     <div class="menu" :class="{'darkHeader': darkHeader}">
         <div class="container">
             <div class="row">
-                <img src="images/icons/Vector.png">
+                <img @click="closeMenu" src="images/icons/Vector.png">
                 <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias obcaecati non incidunt aliquam officia voluptas aperiam ad natus reprehenderit! Corporis natus quaerat recusandae deserunt molestias aliquid id, eligendi neque explicabo sint consectetur. Sequi error odio aut repudiandae, earum assumenda quasi corrupti, illo delectus nulla voluptate dicta, iure debitis architecto amet.</div>
                 <div>
                     <h3>Контакты</h3>
@@ -25,11 +25,17 @@
 <script>
     export default {
         name: 'MenuComponent',
+        props: {},
+        methods: {
+            closeMenu() {
+                this.$emit('closeMenu');
+            }
+        },
         data() {
             return {
                 instIcon: 'images/icons/icons8-instagram-96.png',
                 mainIcon: 'images/icons/omega-sign-svgrepo-com 1.png',
-                darkHeader: false
+                darkHeader: false,
             }
         }
     }
