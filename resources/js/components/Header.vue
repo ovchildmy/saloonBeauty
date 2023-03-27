@@ -19,6 +19,7 @@
     </div>
 </div>
 <MenuComponent @closeMenu="closeMenu" v-if="sideMenu"/>
+<CallbackComponent/>
 </template>
 
 <script>
